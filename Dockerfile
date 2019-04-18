@@ -10,5 +10,6 @@ RUN stack install --resolver lts-13.17 \
         QuickCheck
 
 RUN apt update && \
-    apt install \
-        libpq5
+    apt install -y \
+        postgresql \
+        libpq-dev
