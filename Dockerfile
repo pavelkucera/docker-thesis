@@ -1,9 +1,9 @@
-FROM fpco/stack-build-small:lts-13.16
+FROM fpco/stack-build-small:lts-13.17
 
-RUN stack install --resolver lts-13.16 \
+RUN stack install --resolver lts-13.17 \
         hlint
 
-RUN stack install --resolver lts-13.16 \
+RUN stack install --resolver lts-13.17 \
         cabal-install \
         hspec \
         hspec-discover \
