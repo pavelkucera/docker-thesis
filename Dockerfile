@@ -8,3 +8,7 @@ RUN stack install --resolver lts-13.16 \
         hspec \
         hspec-discover \
         QuickCheck
+
+RUN apt update && \
+    apt install \
+        libpq5
