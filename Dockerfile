@@ -13,3 +13,6 @@ RUN apt update && \
     apt install -y \
         postgresql \
         libpq-dev
+
+RUN stack install --resolver lts-13.17 \
+        postgresql-simple
