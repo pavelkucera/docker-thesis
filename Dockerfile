@@ -5,9 +5,12 @@ RUN stack install --resolver lts-13.17 \
 
 RUN stack install --resolver lts-13.17 \
         cabal-install \
+        megaparsec \
         hspec \
         hspec-discover \
-        QuickCheck
+        hspec-megaparsec \
+        QuickCheck \
+        quickcheck-instances
 
 RUN apt update && \
     apt install -y \
